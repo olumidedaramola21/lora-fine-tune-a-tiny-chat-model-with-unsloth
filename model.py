@@ -17,7 +17,6 @@ def load_base_model_and_tokenizer(model_name='unsloth/Qwen2.5-0.5B-Instruct-bnb-
     Returns:
         (model, tokenizer)
     """
-    # TODO: call FastLanguageModel.from_pretrained with 4-bit loading and return (model, tokenizer)
     model, tokenizer = FastModel.from_pretrained(
         model_name = model_name,
         max_seq_length = max_seq_length,
